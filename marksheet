@@ -1,0 +1,75 @@
+/*ma
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.leapfrog.marksheet;
+import java.util.Scanner;
+/**
+ *
+ * @author itcomputer
+ */
+public class Program
+{
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Welcome to Marksheet");
+        System.out.println("Enter the name of Student\t:\t");
+        String Name=sc.next();
+        System.out.println("Enter the Roll Number\t:\t");
+        String Roll=sc.next();
+        System.out.println("Enter the marks of Science\t:\t");
+        int Science=sc.nextInt();
+         System.out.println("Enter the marks of English\t:\t");
+        int English=sc.nextInt();
+         System.out.println("Enter the marks of Cmaths\t:\t");
+        int Cmaths=sc.nextInt();
+         System.out.println("Enter the marks of Computer\t:\t");
+        int Computer=sc.nextInt();
+         System.out.println("Enter the marks of Nepali\t:\t");
+        int Nepali=sc.nextInt();
+        
+        int total;
+            total=Science+English+Cmaths+Computer+Nepali;
+        float percent=total/5;
+      
+        
+        
+        System.out.print("\n\n\t\t   Marksheet");
+System.out.print("\n-----------------------------------------------------");
+System.out.print("\n\tName\t\t:\t"+Name);
+System.out.print("\n\tRoll No.\t:\t\t"+Roll);
+System.out.print("\n\tSubject\t\t:\tMarks");
+System.out.print("\n\tsub1\t\t:\t"+Science);
+System.out.print("\n\tsub2\t\t:\t"+English);
+System.out.print("\n\tsub3\t\t:\t"+Cmaths);
+System.out.print("\n\tsub4\t\t:\t"+Computer);
+System.out.print("\n\tsub5\t\t:\t"+Nepali);
+System.out.print("\n-----------------------------------------------------"); 
+System.out.print("\n\tTotal\t\t:\t"+total);
+System.out.print("\n\tPercentage\t:\t"+percent);
+
+if(percent>=60)
+{
+System.out.print("\n\tDivision\t:\tFirst");
+}
+
+if(percent>=40 && percent<60)
+{
+System.out.print("\n\tDivision\t:\tSecond");
+}
+
+if(percent<40)
+{
+System.out.print("\n\tDivision\t:\tThird");
+}
+}
+}
+
+        
+        
+        
+        
+        // TODO code application logic here
+   
